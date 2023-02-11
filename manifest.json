@@ -1,0 +1,25 @@
+{
+	"name": "DataCounter",
+	"manifest_version": 2,
+	"version": "1.0",
+    "description": "DataCounter",
+	"content_scripts": [
+		{
+			"matches": ["<all_urls>"],
+			"js": ["content.js"]
+		}
+	],
+	"icons": {
+		"16": "images/icon16.png",
+		"48": "images/icon48.png",
+		"128": "images/icon128.png"
+	},
+	"browser_action": {
+		"default_icon": "images/icon16.png",
+		"default_title": "DataCounter"
+	},
+	"background": {
+		"scripts": ["background.js"]
+	},
+	"permissions": ["tabs", "http://*/*", "https://*/*"]
+}
