@@ -13,5 +13,6 @@ chrome.runtime.sendMessage(
         task:"add-to-webdata",
 		hostname: window.location.hostname,
 		size: TotalSize,
+		time: new Date().toLocaleString(),
 	}
 );

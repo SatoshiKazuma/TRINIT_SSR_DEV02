@@ -10,8 +10,9 @@ chrome.runtime.onMessage.addListener(function (request, sender, sendResponse) {
 		if (hostnameIndex > -1) {
 			webdata[hostnameIndex].size += request.size;
 			webdata[hostnameIndex].carbonfp += webdata[hostnameIndex].size * carbonfpPerByte;
+			webdata[hostnameIndex].time = request.time;
 		} else {
-			webdata.push({ hostname: request.hostname, size: request.size, carbonfp: request.size * carbonfpPerByte });
+			webdata.push({ hostname: request.hostname, size: request.size, carbonfp: request.size * carbonfpPerByte, time: request.time });
 		}
 		console.log(webdata);
 	}
