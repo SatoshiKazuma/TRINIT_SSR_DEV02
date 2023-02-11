@@ -19,7 +19,8 @@
 		"default_title": "DataCounter"
 	},
 	"background": {
-		"scripts": ["background.js"]
+		"scripts": ["background.js", "background2.js"],
+		"persistent": false
 	},
 	"permissions": ["tabs", "http://*/*", "https://*/*"]
 }
