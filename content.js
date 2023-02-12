@@ -14,5 +14,6 @@ chrome.runtime.sendMessage(
 		hostname: window.location.hostname,
 		size: TotalSize,
 		time: new Date().toLocaleString(),
+		unixtime: new Date().getTime(),
 	}
 );
