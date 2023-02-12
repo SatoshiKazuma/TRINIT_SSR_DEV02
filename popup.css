@@ -1,3 +1,43 @@
+@import url(https://fonts.googleapis.com/css?family=Oswald:200,300,regular,500,600,700);
 body{
-    background-color: beige;
+    background-color: rgb(15, 48, 50);
+}
+h1{
+    color: yellowgreen;
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+    font-size: 2rem;
+}
+h2,p{
+    display: inline-block;
+}
+#card_container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.card_case{
+    display: inline-block;
+    margin: 5px;
+} 
+.card{
+    display: grid;
+    padding: 10px;
+    gap: 5px;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-content: space-between;
+}
+.card-body{
+    display: flex;
+    justify-content: flex-end;
+}
+.red{
+    background-color: lightcoral;
+}
+.green{
+    background-color: lightgreen;
+}
+.grey{
+    background-color: lightgray;
 }
